@@ -27,7 +27,7 @@ layout: default
                     <div class="post-heading">
                         <div class="tags">
                             {% for tag in page.tags %}
-                            <a class="tag" href="{{ site.baseurl }}/archive/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+                            <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
                             {% endfor %}
                         </div>
                         <h1>{{ page.title }}</h1>
@@ -131,11 +131,11 @@ layout: default
                 {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
                             {% if tag[1].size > site.featured-condition-size %}
-                                <a href="{{ site.baseurl }}/archive/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
                             {% endif %}
@@ -235,7 +235,7 @@ layout: default
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
-    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
         anchors.options = {
           visible: 'always',
           placement: 'right',
