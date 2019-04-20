@@ -4,7 +4,7 @@ title:      "Hello My Blog"
 subtitle:   "博客搭建好了, 想想有点小激动"
 date:       2019-04-15
 author:     "LeYe Hu"
-header-img: "img/post-bg-hello-my-blog.jpg"
+header-img: "img/post_header/post-bg-hello-my-blog.jpg"
 tags:
     - 经历
     - MarkDown
